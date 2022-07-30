@@ -1,0 +1,101 @@
+/* import cooogle fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200;400;500;700&family=League+Spartan:wght@100;200;300;500;700&family=Poppins:ital,wght@0,200;0,300;0,500;1,200&family=Roboto:wght@100;300;400&family=Taviraj:ital,wght@0,200;0,300;0,400;0,600;1,300;1,500&family=Work+Sans:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background-color: blue;
+}
+.wrapper{
+    width: 720px;
+    background: #fff;
+    border-radius: 5px;
+}
+.wrapper header{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+}
+form{
+    margin: 35px 30px;
+}
+form .dbl-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+form .dbl-field .field{
+    width: calc(100%/2 - 13px);
+    height: 50px;
+    position: relative;
+}
+form .dbl-field .field input,
+ textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 0 18px 0 46px;
+    outline: none;
+    font-size: 16px;
+    max-width: 660px;
+
+}
+form .dbl-field .field input::placeholder,
+ textarea::placeholder{
+    color: #bfbfbf;
+ }
+form .field i{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    pointer-events: none;
+    color: #bfbfbf;
+}
+.message{
+    position: relative;
+}
+.message i{
+    position: absolute;
+    left: 18px;
+    top: 6px;
+    color: #bfbfbf;
+}
+form .dbl-field .field input:focus,
+ textarea:focus{
+    border: 2px solid rgb(65, 65, 255);
+ }
+ form .dbl-field .field input:focus ~ i,
+ textarea:focus ~ i{
+color: #0d6efd;
+ }
+ form .button-area{
+    margin: 25px 0;
+ }
+.button-area button{
+    padding: 10px;
+    color: white;
+    background: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.button-area span{
+color: #0d6efd;
+display: none;
+transition: all 0.3s ease;
+}
